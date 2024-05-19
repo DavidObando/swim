@@ -1,0 +1,19 @@
+$schema: "1.0"
+name: my-devbox-customization
+description: "This will define the base image + customizations for my devbox"
+# These are run as system
+tasks:
+  - name: git-clone
+    displayName: Clone the swim repository
+    parameters:
+      repositoryUrl: https://github.com/davidobando/swim
+      directory: C:\Workspaces
+    description: Clone this repository into C:\Workspaces
+
+# These are run as user
+userTasks:
+  - name: winget
+    displayName: Apply the Dark Mode configuration
+    parameters:
+      configurationFile: C:\Workspaces\swim\configuration\project-swim.configuration.dsc.yaml
+
