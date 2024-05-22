@@ -1,4 +1,4 @@
 $schema: "1.0"
 name: project-swim-image
 description: "This will define the base image + customizations for project swim"
-image: "microsoftwindowsdesktop_windows-ent-cpc_win11-21h2-ent-cpc-m365"
+image: "microsoftwindowsdesktop_windows-ent-cpc_win11-23h2-ent-cpc-m365"
